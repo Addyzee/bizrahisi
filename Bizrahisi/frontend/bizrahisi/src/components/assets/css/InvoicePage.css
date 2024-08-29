@@ -1,0 +1,118 @@
+/* InvoicePage.css */
+
+.InvoicePage_Popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .InvoicePage_Popup > .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Invoice_Page {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    max-width: 600px;
+    height:  600px;
+    margin: 0 auto;
+  }
+  
+  .Invoice_Page h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .Invoice_Details {
+    margin-bottom: 30px;
+  }
+  
+  .Invoice_Row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .Invoice_Row span {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .close_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .Billed_To {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #1a1c21 !important;
+  }
+  
+  .InvoicePage-CustomerInfo p {
+    margin: 0;
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5E6470;
+  }
+  
+  .Invoice_Items table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .Invoice_Items th,
+  .Invoice_Items td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: #1a1c21;
+  }
+  
+  .Invoice_Items th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Styling for the table header row */
+  .Invoice_Items th:first-child,
+  .Invoice_Items td:first-child {
+    border-left: none;
+  }
+  
+  /* Styling for the table footer row */
+  .Invoice_Items th:last-child,
+  .Invoice_Items td:last-child {
+    border-right: none;
+  }
+  
+  /* Styling for table rows */
+  .Invoice_Items tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .close_button:hover {
+    background: #ff4836;
+  }
+  
+  /* Add more styles for other elements as needed */
+  

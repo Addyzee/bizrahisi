@@ -1,0 +1,349 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+/* Color Variables */
+:root {
+  --primary-color: #000;
+  --secondary-color: #9ff4b7;
+  --white: #fff;
+  --gray-light: #fafafa;
+  --gray-medium: #b8b8b8;
+  --gray-dark: #616161;
+}
+
+
+/* Base Styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background: var(--secondary-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* Page Layout */
+.Group_2499 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  overflow: hidden;
+}
+
+.Signup_Light {
+  flex: 1;
+  background: var(--white);
+  padding: 4rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.SignUpPage_Frame_3983 {
+  position: relative;
+  flex: 1;
+  background: linear-gradient(100.06deg, #000000 31.35%, #2E2E2E 85.26%, #000000 98.28%);
+  padding: 4rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: -20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Header */
+.SignUpPage_BizRahisi_Left {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-top: 8px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.Sign_up {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.SignUpPage_Group_2 {
+  margin-top: 50px;
+}
+
+.SignUpPage_BizRahisi_right {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-left: 0px;
+}
+
+.SignUpPage_For_All_Your_Business_Needs {
+  font-size: 2.9rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-top: -130px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+/* Form Sections */
+.Your_Details,
+.Business_Details {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-left: 50px;
+  margin-bottom: 1rem;
+}
+
+
+/* Form Groups */
+.SignUpPage_Form_Group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-direction: row;
+}
+
+.Form_Group_Pair {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px; 
+}
+
+.SignUpPage_Frame_3914,
+.Frame_3985,
+.Frame_3986,
+.Frame_3987,
+.SignUpPage_Frame_3915,
+.Frame_3988,
+.Frame_3989,
+.Frame_3990,
+.Frame_3991,
+.Frame_3992 {
+  width: 250px;
+  height: 40px;
+  background: var(--gray-light);
+  gap: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  border: none;
+  margin-left: 40px;
+}
+
+.SignUpPage_Form_Group input {
+  flex-grow: 1;
+  width: 250px !important;
+  padding: 0;
+  height: 40px;
+  color: var(--primary-color) !important;
+  background: var(--gray-light);
+  justify-content: space-between;
+  border: none !important; 
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.react-tel-input .form-control {
+  width: 250px !important;
+  height: 40px !important;
+  background: var(--gray-light) !important;
+  border: none !important;
+}
+
+.react-tel-input {
+  color: var(--primary-color) !important;
+}
+
+.react-tel-input .flag-dropdown {
+  background: var(--gray-light) !important;
+  border: none !important;
+}
+
+/* Icons */
+.carbon_user_avatar_filled {
+  width: 15px;
+  height: 17.74px;
+  margin-right: -20px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.material_symbols_mail_rounded {
+  width: 17.74px;
+  height: 17.74px;
+  margin-right: -20px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.material_symbols_lock {
+  width: 17.74px;
+  height: 17.74px;
+  margin-right: -20px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.shop_svgrepo_com_1 {
+  width: 17.74px;
+  height: 17.74px;
+  margin-right: -20px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.iconmonstr_location_pin_thin_1 {
+  width: 17.74px;
+  height: 17.74px;
+  margin-right: -20px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.group {
+  width: 17.74px;
+  height: 17.74px;
+  margin-right: -20px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.worker_svgrepo_com_1 {
+  width: 17.74px;
+  height: 17.74px;
+  margin-right: -20px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+/* Submit Button */
+.Sign_Up_Button {
+  width: 300px;
+  height: 50px;
+  align-items: center;
+  margin-left: 150px;
+  margin-bottom: 40px;
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 0 27px 0 27px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.Sign_Up_Button:hover {
+  background: #333;
+}
+
+/* Messages */
+.error,
+.registrationComplete {
+  margin-bottom: 0.5rem;
+}
+
+.error {
+  color: red;
+}
+
+.registrationComplete {
+  color: green;
+}
+
+.SignUpPage_Group_2 {
+  display: flex;
+  align-items: center;
+  margin-top: 500px;
+  margin-bottom: 150px;
+}
+
+.SignUpPage_Layer_2_2_Variant3 {
+  margin-top: 0px;
+  margin-bottom: 200px;
+  margin-left: 0px;
+}
+
+.Layer_1_2 {
+  width: 300px;
+  border-top-left-radius: 20px;
+}
+
+.SignUpPage_Layer_2_1_Default {
+  margin-top: -450px;
+  margin-bottom: 0px;
+  margin-left: 365px;
+  margin-right: 0px;
+}
+
+.Layer_2_1 {
+  position: absolute;
+  width: 250px;
+  background-size: cover;
+  right: 0px;
+  margin-top: -100px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  /* Make page stack vertically */
+  .Group_2499 {
+    flex-direction: column;
+  }
+
+  .SignUpPage_Frame_3983 {
+    display: none;
+  }
+
+  .Signup_Light,
+  .SignUpPage_Frame_3983 {
+    padding: 2rem; 
+  } 
+
+  .SignUpPage_Form_Group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .SignUpPage_Frame_3914,
+  .Frame_3985,
+  .Frame_3986,
+  .Frame_3987,
+  .SignUpPage_Frame_3915,
+  .Frame_3988,
+  .Frame_3989,
+  .Frame_3990,
+  .Frame_3991,
+  .Frame_3992 {
+    flex: 1;
+    margin-right: 0; 
+    margin-bottom: 1rem; 
+  }
+}

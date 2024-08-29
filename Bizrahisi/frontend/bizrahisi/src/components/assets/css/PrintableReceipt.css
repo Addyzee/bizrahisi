@@ -1,0 +1,260 @@
+/* Styles for the Printable Receipt container */
+.TransactionSummary_PrintableReceipt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Styles for the Printable Receipt modal container */
+.TransactionSummary_PrintableReceipt > .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.PrintableReceipt {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    width: 600px;
+    height:  600px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.PrintableReceipt  h2 {
+    margin-left: 20px;
+    color: #1A1C21;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.Receipt_Info {
+    display: flex;
+    justify-content: space-between
+}
+
+.Receipt-CustomerInfo {
+    display: block;
+}
+
+.BilledTo {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1A1C21;
+    margin-bottom: -18px;
+}
+
+p {
+    color: #5E6470;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Receipt-CompanyInfo {
+    display: block;
+}
+
+.From {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1A1C21;
+    margin-bottom: -18px;
+}
+
+.SlipInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.Slip_Number {
+    display: block;
+}
+
+.Slip_Title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1A1C21;
+}
+
+.Date {
+    display: block;
+}
+
+.Payment_Date {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1A1C21;
+}
+
+.Receipt_Items {
+    margin-bottom: 50px;
+}
+
+.Receipt_Items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.Receipt_Items th,
+.Receipt_Items td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: #1a1c21;
+    font-size: 12px;
+}
+  
+.Receipt_Items th {
+    background-color: #f2f2f2;
+}
+  
+/* Styling for the table header row */
+.Receipt_Items th:first-child,
+.Receipt_Items td:first-child {
+    border-left: none;
+}
+  
+/* Styling for the table footer row */
+.Receipt_Items th:last-child,
+.Receipt_Items td:last-child {
+    border-right: none;
+}
+  
+/* Styling for table rows */
+.Receipt_Items tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Styles for the Total Info section */
+.PaymentInfo {
+    display: block;
+    font-size: 14px;
+}
+
+.TotalInfo,
+.PaidInfo,
+.BalanceInfo {
+    display: Flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+}
+
+.PaidInfo {
+    background: #D7DAE0;
+    height: 30px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.Total_Info, 
+.Balance_Info,
+.ReceiptPayment_Method {
+    color: #1A1C21;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.Total_Amount {
+    color: #5E6470 !important;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.Paid_Info {
+    color: #34A853;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.Paid_Amount,
+.Balance_Amount {
+    color: #34A853;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Styles for the Payment Method section */
+.ReceiptPaymentMethod {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.MethodSelected {
+    color: #5E6470;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Styles for the Download PDF button */
+.DownloadPDF button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 220px;
+}
+
+.DownloadPDF button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the Footer section */
+.Footer {
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styles for the Print button */
+.PrintButton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.PrintButton button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.PrintButton button:hover {
+    background-color: #0056b3;
+}
+
+.close_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }  
+
+.close_button:hover {
+  background: #ff4836;
+}
+

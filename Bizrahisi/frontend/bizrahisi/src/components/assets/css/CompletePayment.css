@@ -1,0 +1,260 @@
+/* CompletePayment.css */
+
+.Complete_Payment {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.Complete_Payment.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back_button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.CompletePayment_Container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Payment_Container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+
+.PaymentMethod_And_TransactionsReceived {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-right: 30px;
+
+}
+
+/* Payment Method Section */
+.PaymentMethod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.PaymentMethod h2 {
+    text-align: center;
+    margin-left: -150px;
+}
+
+button.Mpesa,
+button.Cash {
+    width: 300px;
+    height: 70px;
+    border: none;
+    background-color: #E6E6E6;
+    color: #000;
+    padding: 10px 20px;
+    margin: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+button.Mpesa.selected,
+button.Cash.selected {
+    background-color: #2C2C2C;
+}
+
+/* Payment and Balance Section */
+.Payment_And_Balance {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.Payment_Row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.Title {
+    margin-right: 100px;
+}
+
+.Balance_Row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Payment_And_Balance p {
+    color: #747474;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Payment_Row span {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+}
+
+.Balance_Row span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+}
+
+.PaymentMethod_Selected {
+    margin-top: 20px;
+    background-color: #D0D5DD;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.Cash_Amount_Input input,
+.Mpesa_Amount_Input input{
+    padding: 5px 10px;
+    margin-left: 0px;
+    color: #2c2c2c;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 0px !important;
+}
+
+.Keypad {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 150px;
+    color: #000;
+}
+
+.Keypad .hg-theme-default .hg-button.hg-standardBtn {
+    background-color: #6B6B6B;
+}
+
+/* Customer Details Section */
+.CustomerDetails_Row {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #666666;
+}
+
+input {
+    margin-left: 40px;
+    background-color: #D0D5DD;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #000;
+}
+
+/* Transactions Received Section */
+.TransactionsReceived {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E6E6E6;
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.ReceivedTransactions {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -10px;
+}
+
+.RefreshButton {
+    margin-top: 10px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #E6E6E6 !important;
+    margin-left: 40px;
+    transition: border-color 0.2s;
+}
+
+.NoTransactions {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.CustomerNameInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Print Receipt Button Section */
+.PrintReceiptButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    background-color: #6EF694;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}

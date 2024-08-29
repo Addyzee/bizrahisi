@@ -1,0 +1,717 @@
+/* POS.css */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+/* Color Variables */
+:root {
+  --primary-color: #000;
+  --secondary-color: #9ff4b7;
+  --white: #fff;
+  --gray-light: #fafafa;
+  --gray-medium: #b8b8b8;
+  --gray-dark: #616161;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background: var(--secondary-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* Style for the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #D9D9D9;
+}
+
+/* Style for the thumb of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 6px;
+}
+
+/* Style for the track of the scrollbar */
+::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+/* Style for the corners of the scrollbar */
+::-webkit-scrollbar-corner {
+  background-color: #f0f0f0;
+}
+
+/* Style for the buttons (arrows) of the scrollbar */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Page Layout */
+.Dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  overflow: hidden;
+}
+
+.Sidebar {
+  flex: 1;
+  width: 200px;
+  height: 670px;
+  margin-left: 20px;
+  background: var(--white);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.BizRahisi {
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--primary-color);
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.Administrator {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-color);
+  margin-bottom: 0px;
+}
+
+.Navigation_Buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Navigation_Buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  color: #99B2C6;
+  padding: 10px 20px;
+  margin: 2px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: left;
+}
+
+/* Style for the active button */
+.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+/* Hover effect */
+.Navigation_Buttons button:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.Account {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-color);
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+.Account_Buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Account_Buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  color: #99B2C6;
+  padding: 10px 20px;
+  margin: 2px 0 0 -30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: left;
+}
+
+.Account_Buttons button:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.Mode_Selection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 130px;
+}
+
+.Switch_Label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.Switch_Input {
+  display: none;
+}
+
+.Slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.Slider:before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.Switch_Input:checked + .Slider {
+  background-color: #99B2C6;
+}
+
+.Switch_Input:checked + .Slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.Copyright {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.Vaadin_Copyright svg {
+  margin-right: 5px;
+}
+
+.Copyright_BizRahisi {
+  font-size: 10px;
+  font-weight: 700;
+  color: #99B2C6;
+}
+
+.Top_Content {
+  display: flex;
+}
+
+.Search_Bar {
+  padding: 0;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  gap: 19px;
+  top: 17px;
+  left: 15.69%;
+  right: 0%;
+  background: var(--white);
+  border-radius: 10px;
+  width: 870px;
+  height: 40px;
+}
+  
+.Search {
+  margin: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  color: rgba(184, 184, 184, 0.5);
+  display: flex;
+  align-items: center;
+}
+  
+.ri_search_line {
+  width: 17px;
+  height: 20px;
+  margin: 10px;
+}
+  
+.Date_Time {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 19px;
+  position: absolute;
+  left: 73.76%;
+  right: 11.22%;
+  top: 17px;
+  bottom: 0%;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 250px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #000000;
+}
+  
+.Notifications_Bar {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  top: 17px;
+  left: 91.19%;
+  right: 5.5%;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+  
+.ion_notifications {
+  align-items: center;
+}
+  
+.Avatar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  top: 17px;
+  left: 95.69%;
+  right: 0%;
+  background: var(--white);
+  background-size: cover; 
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.POS_Center_Frames {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  position: absolute;
+  width: 870px;
+  height: 350px;
+  left: 240px;
+  top: 75px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.Pos_SearchBar {
+  display: flex;
+  justify-content: space-between;
+  background: var(--white);
+  border-radius: 10px;
+  width: 820px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Pos_SearchBar input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.POS_Data {
+  padding: 0px;
+  margin-left: 20px;
+  overflow-y: auto; 
+  overflow-x: auto; 
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+  margin-top: -20px;
+}
+
+
+.POSData_Row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.posdata_Item {
+  background-color: #E6E6E6;
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: 70px;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.item_Picture {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 10px; 
+  margin-right: 20px;
+  background: var(--white);
+}
+
+.item_Name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.item_Name strong {
+  font-weight: bold;
+}
+
+.item_ID {
+  font-size: 11px;
+  font-weight: 400;
+  color: #34A853;
+}
+
+.item_Category {
+  font-size: 12px; 
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.item_Price {
+  display: block;
+  font-weight: 700;
+  font-size: 12.5px;
+  color: #0000005C;
+  margin-top: 5px;
+}
+
+.add_to_invoice {
+  display: flex;
+  align-items: center;
+  width: 85px;
+  height: 25px;
+  background: #9FF4B7;
+  border-radius: 10px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+
+.Latest_Transactions {
+  background-color: var(--white);
+  position: absolute;
+  width: 830px;
+  height: 195px;
+  left: 240px;
+  top: 450px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.Latest_Transactions h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-left: 10px;
+}
+
+.Transaction_List {
+  overflow: auto;
+}
+
+.Transaction_Table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Transaction_Header {
+  color: var(--primary-color);
+}
+
+.Transaction_Header th {
+  font-size: 14px;
+  font-weight: 700;
+  color: #99B2C6;
+  padding: 10px;
+  text-align: left;
+  /* border-bottom: 2px solid var(--primary-color); */
+}
+
+.Transaction_Row {
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.Transaction_Row:last-child {
+  border-bottom: none;
+}
+
+.Transaction_Column {
+  font-size: 12px;
+  font-weight: 600;
+  color: #747474;
+  padding: 10px;
+  text-align: left;
+}
+
+.Transaction_Status {
+  border-radius: 8px;
+  padding: 4px 10px;
+  margin-right: 10px;
+}
+
+.Transaction_Status.Green {
+  color: var(--white);
+  background-color: #3FB8A9; 
+}
+
+.Transaction_Status.Gray {
+  color: var(--white);
+  background-color: gray;
+}
+
+
+.Invoice_Prep {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 370px;
+  height: 605px;
+  left: 1135px;
+  top: 80px;
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+.Invoice_Cart {
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 300px;
+}
+
+.Invoice_Prep h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 12px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style for the cart item container */
+.cart_item {
+  position: relative;
+  width: 300px;
+  height: 80px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the item name */
+.cart_item .CartItem_Name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+/* Style for the quantity adjustment container */
+.cart_item .Quantity_Adjustment {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  background: #FFFEFE;
+  margin-left: 80px;
+  margin-bottom: 50px; 
+}
+
+/* Style for the minus button */
+.cart_item .Minus_Button,
+.cart_item .Plus_Button {
+  background: transparent;
+  width: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 18px;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+}
+
+.cart_item .Minus_Button {
+  color: #8F8F8F;
+}
+
+.cart_item .Plus_Button {
+  color: #000;
+}
+
+/* Style for the quantity box */
+.cart_item .Quantity_Box {
+  flex: 1;
+  display: flex;
+  width: 10px;
+  background-color: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  font-size: 14px;
+  color: #8F8F8F;
+  margin-left: 10px;
+}
+
+/* Style for the item price */
+.cart_item .CartItem_Price {
+  font-family: 'Quicksand';
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  margin-left: auto;
+  margin-bottom: 5px;
+}
+
+/* Style for the remove button */
+.cart_item .Remove_Button {
+  background-color: #A6A6A6;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  padding: 0;
+}
+
+.CartItem_TotalPrice {
+  position: absolute;
+  width: auto;
+  height: 21px;
+  left: 200px;
+  top: 70px; 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.Invoice_Bottom {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  left: 25px;
+  top: 355px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Cart_Subtotal,
+.Discount,
+.VAT {
+  position: relative; 
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 10px; 
+}
+
+.Separator {
+  width: 100%;
+  color: var(--primary-color);
+}
+
+.Total {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+
+.Invoice_Buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Proceed_Button,
+.Generate_Invoice_Button,
+.cancel_button {
+  width: 100%; 
+  height: 31px;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid #E6E6E6;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.Proceed_Button {
+  background-color: #6EF694;
+}
+
+.Generate_Invoice_Button {
+  background-color: #A6A6A6;
+}
+
+.cancel_button {
+  background-color: var(--white);
+  color: #A6A6A6;
+}

@@ -1,0 +1,318 @@
+/* LoginPage.css */
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+/* Color Variables */
+:root {
+  --primary-color: #000;
+  --secondary-color: #9ff4b7;
+  --white: #fff;
+  --gray-light: #fafafa;
+  --gray-medium: #b8b8b8;
+  --gray-dark: #616161;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background: var(--secondary-color);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-color);
+    margin: 0;
+}
+
+/* Page Layout */
+.Group_2397 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    overflow: hidden;
+}
+
+.Rectangle_5 {
+    flex: 1;
+    background: var(--white);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.LoginPage_Frame_3983 {
+    position: relative;
+    flex: 1;
+    background: linear-gradient(100.06deg, #000000 31.35%, #2E2E2E 85.26%, #000000 98.28%);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Header */
+.LoginPage_BizRahisi_Left {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-top: 8px;
+    margin-left: 75px;
+    margin-bottom: 40px;
+}
+
+.Login {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-left: 75px;
+    margin-bottom: 30px;
+}
+
+.LoginPage_Group_3 {
+    margin-top: 190px;
+}
+
+.LoginPage_Group_2 {
+    margin-top: 50px;
+}
+
+.LoginPage_BizRahisi_right {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-left: 0px;
+}
+
+.LoginPage_For_All_Your_Business_Needs {
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-top: -130px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+/* Form Headings */
+.Your_Email,
+.Password {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-left: 75px;
+    margin-bottom: 1rem;
+}
+
+/* Form Group */
+.LoginPage_Form_Group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+
+.LoginPage_Frame_3914,
+.LoginPage_Frame_3915 {
+  width: 400px;
+  height: 40px;
+  background: var(--gray-light);
+  gap: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 75px;
+}
+
+.LoginPage_Form_Group input {
+    flex-grow: 1;
+    width: 500px;
+    height: 40px;
+    background: var(--gray-light);
+    color: var(--primary-color);
+    justify-content: space-between;
+    border: none;
+    border-radius: 6px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.material_symbols_mail_rounded {
+    width: 17.74px;
+    height: 17.74px;
+    margin-right: -20px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.material_symbols_lock {
+    width: 17.74px;
+    height: 17.74px;
+    margin-right: -20px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.forgotPassword {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 230px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+/* Login Button */
+.Login_Button {
+    width: 400px;
+    height: 50px;
+    align-items: center;
+    margin-left: 75px; 
+    margin-bottom: 40px;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0 27px 0 27px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.socialLogin {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 75px;
+    margin-bottom: 80px;
+    color: var(--primary-color);
+}
+
+.notRegistered {
+    font-size: 18px;
+    font-weight: 700;
+    color: #99B2C6;
+    margin-left: 75px;
+}
+
+.Group_4 {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 75px;
+    margin-bottom: 50px;
+}
+
+.Vaadin_Copyright {
+   display: flex; 
+   align-items: center;
+}
+
+.Vaadin_Copyright svg {
+    margin-right: 10px;
+}
+
+.copyright {
+    font-size: 12px;
+    font-weight: 700;
+    color: #99B2C6;
+}
+
+.Login_Button:hover {
+    background: #333;
+}
+
+/* Messages */
+.error,
+.loginComplete {
+    margin-bottom: 0.5rem;
+}
+
+.error {
+    color: red;
+}
+
+.loginComplete {
+    color: green;
+}
+
+.LoginPage_Group_2 {
+    display: flex;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 150px;
+}
+
+.Layer_2_2_Variant3 {
+    margin-top: -64px;
+    margin-bottom: 200px;
+    margin-left: -64px;
+}
+
+.Layer_1_2 {
+    width: 300px;
+    border-top-left-radius: 20px;
+    margin-top: -64px;
+    margin-left: -64px;
+}
+
+.Layer_2_1_Default {
+    margin-top: -300px;
+    margin-bottom: 0px;
+    margin-left: 365px;
+    margin-right: 0px;
+}
+
+.Layer_2_1 {
+    position: absolute;
+    width: 250px;
+    background-size: cover;
+    right: 0px;
+    margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    /* Make page stack vertically */
+    .Group_2397 {
+        flex-direction: column;
+    }
+
+    .LoginPage_Frame_3983 {
+        display: none;
+    }
+
+    .Rectangle_5,
+    .LoginPage_Frame_3983 {
+        padding: 2rem;
+    }s
+
+    .LoginPage_Form_Group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .LoginPage_Frame_3914,
+    .LoginPage_Frame_3915 {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

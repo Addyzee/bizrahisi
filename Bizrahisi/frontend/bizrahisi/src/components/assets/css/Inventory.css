@@ -1,0 +1,829 @@
+/* Inventory.css */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+/* Color Variables */
+:root {
+  --primary-color: #000;
+  --secondary-color: #9ff4b7;
+  --white: #fff;
+  --gray-light: #fafafa;
+  --gray-medium: #b8b8b8;
+  --gray-dark: #616161;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background: var(--secondary-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* Style for the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #D9D9D9;
+}
+
+/* Style for the thumb of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 6px;
+}
+
+/* Style for the track of the scrollbar */
+::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+/* Style for the corners of the scrollbar */
+::-webkit-scrollbar-corner {
+  background-color: #f0f0f0;
+}
+
+/* Style for the buttons (arrows) of the scrollbar */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Page Layout */
+.Dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  overflow: hidden;
+}
+
+.Sidebar {
+  flex: 1;
+  width: 200px;
+  height: 670px;
+  margin-left: 20px;
+  background: var(--white);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.BizRahisi {
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--primary-color);
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.Administrator {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-color);
+  margin-bottom: 0px;
+}
+
+.Navigation_Buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Navigation_Buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  color: #99B2C6;
+  padding: 10px 20px;
+  margin: 2px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: left;
+}
+
+/* Style for the active button */
+.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+/* Hover effect */
+.Navigation_Buttons button:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.Account {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-color);
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+.Account_Buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Account_Buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  color: #99B2C6;
+  padding: 10px 20px;
+  margin: 2px 0 0 -30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: left;
+}
+
+.Account_Buttons button:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.Mode_Selection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 130px;
+}
+
+.Switch_Label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.Switch_Input {
+  display: none;
+}
+
+.Slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.Slider:before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.Switch_Input:checked + .Slider {
+  background-color: #99B2C6;
+}
+
+.Switch_Input:checked + .Slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.Copyright {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.Vaadin_Copyright svg {
+  margin-right: 5px;
+}
+
+.Copyright_BizRahisi {
+  font-size: 10px;
+  font-weight: 700;
+  color: #99B2C6;
+}
+
+.Top_Content {
+  display: flex;
+}
+
+.Search_Bar {
+  padding: 0;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  gap: 19px;
+  top: 17px;
+  left: 15.69%;
+  right: 0%;
+  background: var(--white);
+  border-radius: 10px;
+  width: 870px;
+  height: 40px;
+}
+  
+.Search {
+  margin: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  color: rgba(184, 184, 184, 0.5);
+  display: flex;
+  align-items: center;
+}
+  
+.ri_search_line {
+  width: 17px;
+  height: 20px;
+  margin: 10px;
+}
+  
+.Date_Time {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 19px;
+  position: absolute;
+  left: 73.76%;
+  right: 11.22%;
+  top: 17px;
+  bottom: 0%;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 250px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #000000;
+}
+  
+.Notifications_Bar {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  top: 17px;
+  left: 91.19%;
+  right: 5.5%;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+  
+.ion_notifications {
+  align-items: center;
+}
+  
+.Avatar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  top: 17px;
+  left: 95.69%;
+  right: 0%;
+  background: var(--white);
+  background-size: cover; 
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+
+.Inventory_Data {
+  position: absolute;
+  width: 1230px;
+  height: 568px;
+  margin-left: 240px;
+  top: 80px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.Inventory_Data h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #383E49;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.button_and_searchbar {
+  display: flex;
+}
+
+.Inventory_SearchBar {
+  display: flex;
+  justify-content: space-between;
+  background: var(--white);
+  border-radius: 10px;
+  width: 500px;
+  height: 40px;
+  margin-left: 550px;
+}
+
+.Inventory_SearchBar input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.Inventory_Data .table-container {
+  max-height: 480px;
+  overflow: auto;
+}
+
+.Inventory_Data table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Inventory_Data th {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.Inventory_Data .sticky-header {
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+  color: #99B2C6;
+}
+
+.Inventory_Data td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #E6E6E6;
+  font-size: 12px;
+  font-weight: 600;
+  color: #747474;
+}
+
+.Category {
+  color: #3FB8A9 !important;
+}
+
+.Option {
+  background: #2C2C2C !important;
+  border-radius: 6.17117px;
+  width: 60px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white) !important;
+  font-family: 'Quicksand';
+  font-weight: 400 !important;
+  font-size: 11.571px;
+  line-height: 18px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.Option:hover {
+  background-color: #3FB8A9; 
+  color: #FFFFFF; 
+}
+
+.Stock_Level {
+  margin-top: 5px;
+  /* border-radius: 6.05514px; */
+  /* width: 60px; */
+  /* height: 18px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white) !important;
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 11.3534px;
+  line-height: 17px;
+}
+
+.StockLevel.Green {
+  color: var(--white);
+  background-color: #3FB8A9; 
+  border-radius: 6.05514px;
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white) !important;
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 11.3534px;
+  line-height: 17px;
+}
+
+.StockLevel.Normal {
+  color: var(--white);
+  background-color: var(--gray-dark);
+  border-radius: 6.05514px;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white) !important;
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 11.3534px;
+  line-height: 17px;
+}
+
+.StockLevel.Gray {
+  color: var(--white);
+  background-color: var(--gray-medium);
+  border-radius: 6.05514px;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white) !important;
+  font-family: 'Quicksand';
+  font-weight: 600;
+  font-size: 11.3534px;
+  line-height: 17px;
+}
+
+
+.Add_Product {
+  position: absolute;
+  display: none; /* Initially hidden */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  left: 1100px;
+  width: 340px;
+  height: 570px;
+  top: 60px;
+  border-radius: 15px;
+  margin-left: 30px;
+  overflow: auto;
+}
+
+.Add_Product.Visible {
+  display: block; /* Visible when the 'Visible' class is present */
+}
+
+.Heading_and_Close_Button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Heading_and_Close_Button button{
+  background-color: var(--white);
+  position: absolute;
+  margin-left: 300px;
+  margin-bottom: 10px;
+}
+
+.Add_Product h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+  /* Add more styles as needed */
+}
+
+/* Form styling */
+.Add_Product_Form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for the Input Group */
+.Add_Product_Input_Group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+}  
+
+/* Style for the Product Image label */
+.Add_Product_Input_Group label {
+  font-size: 12px;
+  font-weight: 500;
+  align-items: center;
+  color: #48505E;
+  flex: 1;
+}
+
+.Product_Image {
+  margin-bottom: 20px;
+}
+
+/* Style for the Image Upload container */
+.Image_Upload {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the Image Preview box */
+.Image_Preview {
+  width: 81px;
+  height: 81.82px;
+  background: #FFFFFF;
+  border: 1px dashed #9D9D9D;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* Add more styles as needed */
+}
+
+.Image_Preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Make the image cover the entire container */
+}
+
+/* Style for the Upload Instructions */
+.Upload_Instructions {
+  margin-left: 10px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 16px;
+  background-color: #448DF2;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  /* Add more styles as needed */
+}
+
+.productImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.Upload_Label {
+  margin-left: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+/* Style for the "Drag image here" text */
+.Drag_Text {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #858D9D;
+  /* Add more styles as needed */
+}
+
+.Browse_Text {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #858D9D;
+}
+
+/* Style for the "Browse image" link */
+.Browse_Link {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #448DF2;
+  cursor: pointer;
+  /* Add more styles as needed */
+}
+
+input[type="file"] {
+  margin-left: 0px;
+}
+
+.Add_Product_Input_Group input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+  width: 214px !important;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #D0D5DD !important;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px !important;
+  flex: 1;
+  order: 1;
+  flex-grow: 0;
+  color: var(--primary-color) !important;
+  padding: 0px !important;
+  margin-top: 0px !important;
+}
+
+.Add_Product_Input_Group select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+  width: 214px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  flex: 1;
+  order: 1;
+  flex-grow: 0;
+}
+
+.Submit_Button {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  margin-top: 20px; /* Add some spacing below the last input */
+}
+
+.Submit_Button button {
+  padding: 8px 16px;
+  background-color: #448DF2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Submit_Button button:hover {
+  background-color: #357EC7; /* Change color on hover */
+}
+
+.Product_Details {
+  position: absolute;
+  display: none; /* Initially hidden */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  left: 1100px;
+  width: 340px;
+  height: 570px;
+  top: 60px;
+  border-radius: 15px;
+  margin-left: 30px;
+  overflow: auto;
+}
+
+
+.Product_Details.Visible {
+  display: block;
+}
+
+.Product_Details h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Product_Details_Form .Product_Image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Product_Details_Form .Image_Upload {
+  position: relative;
+}
+
+.Product_Details_Input_Group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.Product_Details_Input_Group label {
+  font-size: 12px;
+  font-weight: 500;
+  align-items: center;
+  color: #48505E;
+  flex: 1;
+}
+
+.Product_Details_Input_Group input.EditMode {
+  border: 1px solid #D0D5DD !important;
+  text-align: left;
+}
+
+.Product_Details_Input_Group input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: right;
+  gap: 8px;
+  margin-right: 10px;
+  width: 214px !important;
+  height: 30px;
+  background: #FFFFFF;
+  border: none !important;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px !important;
+  flex: 1;
+  order: 1;
+  flex-grow: 0;
+  color: var(--primary-color) !important;
+  padding: 0px !important;
+  margin-top: 0px !important;
+}
+
+.Product_Details_Input_Group select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+  width: 214px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  flex: 1;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* Define styles for the success message */
+.Success_Message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 999;
+  animation: slideInDown 0.5s ease-in-out forwards;
+}
+
+/* Define keyframes for slide-in animation */
+@keyframes slideInDown {
+  0% {
+      opacity: 0;
+      transform: translate(-50%, 100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+  }
+}

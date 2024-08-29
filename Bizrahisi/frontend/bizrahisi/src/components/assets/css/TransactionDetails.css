@@ -1,0 +1,271 @@
+/* InvoicePage.css */
+
+.TransactionDetailPage_Popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+    
+  .TransactionDetailPage_Popup > .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+    
+  .Transaction_Detail_Page {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    /* max-width: 600px; */
+    height:  600px;
+    margin: 0 auto;
+    overflow: auto;
+    /* Specify maximum width to ensure content fits within the PDF */
+    max-width: 100%; 
+    /* Scale down the content for PDF generation */
+    transform: scale(0.9); 
+    transform-origin: center;
+    /* Add other styles as needed */
+  }
+    
+  .Transaction_Detail_Page h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .Transaction_type {
+    color: #1A1C21;
+    font-style: Quicksand;
+    font-size: 20px;
+    font-weight: SemiBold;
+  }
+  
+  .TransactionParty_details {
+    display: flex;
+    flex-direction: row;
+    background-color: #F9FAFC;
+    height: auto;
+  }
+  
+  .LeftSide_Details {
+    margin-left: 10px;
+  }
+  
+  .Billed_to {
+    color: #1A1C21;
+    font-style: QuickSand;
+    font-size: 14px;
+  }
+  
+  .Transaction_Party {
+    color: #5E6470;
+    font-style: QuickSand;
+    font-size: 14px;
+  }
+  
+  .Payment_Method {
+    color: #1A1C21;
+    font-style: QuickSand;
+    font-size: 14px;
+  }
+  
+  .Paid_Through {
+    color: #5E6470;
+    font-style: QuickSand;
+    font-size: 14;
+  }
+  
+  .RightSide_Details {
+    margin-left: 370px;
+  }
+  
+  .BusinessName {
+    color: #34A853;
+    font-style: Inter;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .PaymentDate_Heading {
+    color: #1A1C21;
+    font-style: QuickSand;
+    font-size: 14px;
+  }
+  
+  .PaymentDate {
+    color: #5E6470;
+    font-style: QuickSand;
+    font-size: 14px;
+  }
+    
+  .More_Transaction_Details {
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #F9FAFC;
+    border-radius: 20px;
+  }
+  
+  .More_Transaction_Details table {
+    margin-left: 50px;
+  }
+  
+  .More_Transaction_Details th {
+    color: #1A1C21;
+    font-size: 15px;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .More_Transaction_Details td {
+    color: #5E6470;
+    font-size: 14px;
+    padding: 8px;
+    text-align: center;
+  }
+    
+  .close_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .Product_Items {
+    border: #D7DAE0 1px Solid;
+    border-radius: 10px;
+  }
+   
+  .Product_Items table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+    
+  .Product_Items th,
+  .Product_Items td {
+    padding: 8px;
+    text-align: center;
+    color: #1a1c21;
+    border-bottom: #D7DAE0 1px Solid;
+  }
+    
+  .Product_Items th {
+    background-color: #F9FAFC;
+  }
+    
+  /* Styling for the table footer row */
+  .Product_Items td:first-child, 
+  .Product_Items td:nth-child(2), 
+  .Product_Items td:nth-child(3), 
+  .Product_Items td:last-child {
+    border-bottom: none;
+  }
+    
+  .TransactionItem-Totals {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  
+  .Transaction-Subtotal {
+    border-bottom: #D7DAE0 1px solid;
+  }
+  
+  .Transaction-Subtotal p {
+    color: #1A1C21;
+    font-size: 16px;
+    font-family: inter;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .Transaction_Subtotal {
+    color: #5E6470;
+    font-size: 15px;
+    font-family: inter;
+    margin-left: 415px;
+  }
+  
+  .TransactionAmount-Paid p {
+    color: #34A853;
+    font-size: 15px;
+    font-family: inter;
+    margin-left: 20px;
+  }
+  
+  .TransactionAmount_Paid {
+    color: #34A853;
+    font-size: 14px;
+    font-family: inter;
+    margin-left: 445px;
+  }
+  
+  .Transaction-TotalDue {
+    border-bottom: #D7DAE0 1px solid;
+  }
+  
+  .Transaction-TotalDue p {
+    color: #1A1C21;
+    font-size: 16px;
+    font-family: inter;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .Transaction_TotalDue {
+    color: #5E6470;
+    font-size: 15px;
+    font-family: inter;
+    margin-left: 410px;
+  }
+  
+  .TransactionPayment_Method {
+    margin-left: 370px;
+  }
+  
+  .TransactionDetailsPage-Footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  
+  .DownloadButton {
+    background-color: white;
+    color: black;
+    border: black 1px solid;
+    width: 300px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .ShareButton {
+    background-color: #5E6470;
+    color: black;
+    border: black 1px solid;
+    width: 300px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .close_button:hover {
+    background: #ff4836;
+  }
+  
+  @media print {
+    .Transaction_Detail_Page {
+      font-size: 12px; /* Adjust font size for PDF */
+    }
+  }
