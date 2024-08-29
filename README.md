@@ -1,4 +1,6 @@
 # smeazy
+BizRahisi: SMEazy Open Source
+Business Management System
 
 ### Python 3.10.2
 
